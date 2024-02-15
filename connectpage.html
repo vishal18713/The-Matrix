@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+    body {
+      font-family: "Audiowide";
+
+      background: linear-gradient(to bottom right, rgb(34, 34, 97),#001E2B);
+    }
+
+    nav{
+      background:#001E2B;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      height: 50px;
+      width: 100%;
+      z-index: 1;
+    }
+    label.logo{
+      color: skyblue;
+      font-weight: 40px;
+      font-size: 70px;
+      line-height: 50px;
+      }
+      .logo:hover {
+          text-shadow: 0px 0px 10px skyblue, 0px 0px 2px skyblue;
+      }
+    .logoimage{
+      line-height:50px ;
+    }
+    nav ul{
+      float: right;
+    }
+    nav ul li{
+      display: inline-block;
+      
+      margin: 0 10px;
+    }
+    nav ul li a{
+      color: skyblue;
+      font-weight: 80px;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+    
+    .active a{
+      background: skyblue;
+      color: #001E2B;
+      transition: .5s;
+    }
+    a:hover{
+      background: skyblue;
+      color: #001E2B;
+      transition: .5s;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      width: 200px;
+      height: 250px;
+      flex: 1;
+    }
+
+    .job-info {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      flex: 1;
+    }
+
+    .card__inner {
+      margin: 10px 10px 10px 10px;
+      position: relative;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card:hover .card__inner {
+      transform: rotateY(180deg);
+    }
+
+    .card__body {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      backface-visibility: hidden;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px skyblue, 0px 0px 20px skyblue;
+      object-fit: cover;
+
+    }
+
+    .card-front img {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+
+
+    }
+
+
+    .card-back {
+      background-image: linear-gradient(60deg, rgb(58, 162, 180) 14%, rgba(255, 41, 232, 0.7931547619047619) 57%, rgba(252, 69, 79, 0.896796218487395) 89%);
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <label class="logoimage"><img src="logo.png" height="50px" width="50px"></label>
+    <label class="logo">MATRIX</label>
+    <ul>
+      <li><a href="1_homepage.html">Home</a></li>
+      <li class="active"><a href="connectpage.html">Connect</a></li>
+      <li><a href="profilepage.html">Profile</a></li>
+      <li><a href="loginpage.html" target="_self">Login</a></li>
+      <li><a href="signup.html">Sign-up</a></li>
+      <li><a href="1_helppage.html">Help</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+
+    <div class="job-info">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="ui-ux.jpg">
+
+
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">person-1</h2>
+            <p>UI UX designers create the user interface for an app, website, or other interactive media. Their work
+              includes collaborating with product managers and engineers to gather requirements from users before
+              designing ideas that can be communicated using storyboards. They also process flows or sitemaps.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="WEB-DEV.jpeg">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-2</h2>
+            <p>Web development, also known as website development, refers to the tasks associated with creating,
+              building, and maintaining websites and web applications that run online on a browser. It may, however,
+              also include web design, web programming, and database management</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="game-dev.jpeg">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-3</h2>
+            <p>Game development is the process of creating video games — using technical knowledge and skills to turn
+              game concepts and ideas into reality. While it sounds pretty straightforward, it's a broad field that
+              involves coding, art design, project management, and more</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="home">
+
+    <div class="job-info">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="blockchain.jpeg" alt="">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-4</h2>
+            <p>Blockchain development is the process of creating shared, unchangeable, distributed ledger technology
+              (DLT) that securely records transactions and tracks assets—whether those are physical assets, like money
+              or real estate, or nonphysical assets, like copyrights—within a network.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="AI-ML.jpeg">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-5</h2>
+            <p>Artificial Intelligence (AI) is an umbrella term for computer software that mimics human cognition in
+              order to perform complex tasks and learn from them. Machine learning (ML) is a subfield of AI that uses
+              algorithms trained on data to produce adaptable models that can perform a variety of complex tasks.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="app-dev.jpg" alt="">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-6</h2>
+            <p> A web developer's job is to create websites. While their primary role is to ensure the website is
+              visually appealing and easy to navigate, many web developers are also responsible for the website's
+              performance and capacity.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="home">
+
+    <div class="job-info">
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="cloud-computing.jpg">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-7</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloremque assumenda perferendis error
+              et! Qui architecto asperiores praesentium mollitia, nisi ratione quod totam ipsa voluptate perspiciatis
+              accusantium ad, tempora ex!</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="ar-vr.jpg" alt="">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sed, quo alias natus impedit ad corrupti
+              quia facere quibusdam. Quo aspernatur modi amet nesciunt laborum ducimus, ipsa voluptate exercitationem
+              harum!</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__body card-front">
+            <img src="data-sci.jpg">
+          </div>
+          <div class="card__body card-back">
+            <h2 class="card__title">Person-9</h2>
+            <p>Data analytics is the science of analyzing raw data to make conclusions about information. Many of the
+              techniques and processes of data analytics have been automated into mechanical processes and algorithms
+              that work over raw data for human consumption.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Audiowide";
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to bottom,skyblue,#001E2B);
+   
+     
+}
+.main {
+    color: #001E2B;
+    background: skyblue;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 60px;
+    
+     position: relative; 
+     box-shadow: 0px 0px 50px skyblue ;
+}
+h2 {
+    
+    color:#001E2B;
+    text-align: center;
+
+}
+
+.main .input {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    position: relative;
+    
+
+}
+.button{ 
+    width: 80%;
+          height: 45px;
+          background:#001E2B;
+          color: skyblue;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 18px;
+          align-items: center;
+          margin-bottom: 10px;
+          transition: 0.2s;
+
+
+}
+.button:hover{
+    transform: scale(1.1);
+
+}
+form{
+    justify-content: center;
+}
+.icon{
+    position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 25px;
+}
+input{
+    width: 100%;
+          height: 50px;
+          margin: 30px 0px;
+          position: relative;
+}
+.input i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(60%);
+    font-size: 25px;
+  }
+  .input input::placeholder{
+    color: #001E2B;
+  }
+.input input{
+    height: 100%;
+          width: 100%;
+          background:transparent;
+          border: none;
+          outline: none;
+          border: 2px solid #001E2B;
+          border-radius: 40px;
+          font-size: 20px;
+          padding: 20px 45px 20px 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+
+}
+.main a:hover{
+    text-decoration: underline dashed blue;
+          color: blue;
+}
+.remember-forget{
+    height: 2px;
+    width: 2px;
+}
+nav{
+    background:#001E2B;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+  }
+  label.logo{
+    color: skyblue;
+    font-weight: 40px;
+    font-size: 70px;
+    line-height: 50px;
+    }
+    .logo:hover {
+        text-shadow: 0px 0px 10px skyblue, 0px 0px 2px skyblue;
+    }
+  .logoimage{
+    line-height:50px ;
+  }
+  nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+  }
+  nav ul li a{
+    color: skyblue;
+    font-weight: 80px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  
+  .active a{
+    background: skyblue;
+    color: #001E2B;
+    transition: .5s;
+  }
+  a:hover{
+    background: skyblue;
+    color: #001E2B;
+    transition: .5s;
+  }

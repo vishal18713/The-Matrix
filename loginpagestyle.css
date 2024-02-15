@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #001E2B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide";
+  text-decoration: none;
+
+}
+
+nav {
+  background: #001E2B;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+label.logo {
+  color: skyblue;
+  font-weight: 40px;
+  font-size: 70px;
+  line-height: 50px;
+}
+
+.logo:hover {
+  text-shadow: 0px 0px 10px skyblue, 0px 0px 2px skyblue;
+}
+
+.logoimage {
+  line-height: 50px;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: skyblue;
+  font-weight: 80px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active a {
+  background: skyblue;
+  color: #001E2B;
+  transition: .5s;
+}
+
+a:hover {
+  background: skyblue;
+  color: #001E2B;
+  transition: .5s;
+}
+
+.main {
+  color: blue;
+  background: skyblue;
+  width: 400px;
+  border-radius: 10px;
+  margin-right: 100px;
+  position: relative;
+  box-shadow: 0px 0px 50px skyblue;
+
+
+
+}
+
+.main h1 {
+  text-align: center;
+  color: #366d84;
+}
+
+.main .input {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0px;
+  position: relative;
+}
+
+.input input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #001E2B;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input input::placeholder {
+  color: blue;
+}
+
+.input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+.main .forgot {
+
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.main .forgot a {
+  color: blue;
+  text-decoration: none;
+
+
+}
+
+.main .forgot a:hover {
+  text-decoration: underline dashed #001E2B;
+  color: #001E2B;
+}
+
+.main .submitbtn {
+  width: 80%;
+  height: 45px;
+  background: #001E2B;
+  color: skyblue;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main .register {
+
+  font-size: 18px;
+  text-align: center;
+
+
+}
+
+.main .register p a {
+  color: blue;
+  text-decoration: none;
+
+
+}
+
+.main .register p a:hover {
+  text-decoration: underline dashed;
+  color: #001E2B;
+
+}
+
+#square {
+  background: transparent;
+  border: 10px skyblue solid;
+  width: 400px;
+  height: 400px;
+  animation-name: upDownAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px skyblue;
+
+}
+
+#rect {
+  background-color: #001E2B;
+  width: 300px;
+  height: 600px;
+  color: skyblue;
+  font-size: 40px;
+  font-weight: 50px;
+  text-align: center;
+
+
+
+
+}
+
+@keyframes upDownAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

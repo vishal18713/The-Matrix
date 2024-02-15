@@ -1,0 +1,39 @@
+<a id="clipper" href="#" target="_blank" style="float: right;"title="click here to watch">
+          <img src="C:\Users\visha\OneDrive\Pictures\Screenshots\Screenshot 2023-10-23 195707.png" width="80px" height="80px" style="background: #00684A;">
+         </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <p class="job">   <a href="#" target="_blank">
+       
+        <img src="C:\Users\visha\OneDrive\Desktop\WhatsApp Image 2023-10-19 at 10.42.50_69ab3db8.jpg" height="300" width="500"  style="float:right;margin-right:0px;" >
+       </a>
+       Our company is offering exciting internship opportunities for students who are passionate about their field of study and are eager to gain practical experience. This is a unique chance to work on real-world projects, learn from industry professionals, and develop valuable skills for your future career.<br><br><br>
+    </p>
+      <a href="#" target="_blank" style="float: left;"title="click here to watch">
+        <img src="C:\Users\visha\OneDrive\Pictures\Screenshots\Screenshot 2023-10-19 124231.png" width="80px" height="80px" >
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+   
+      <a href="#" target="_blank">
+       
+         <img  src="C:\Users\visha\OneDrive\Desktop\WhatsApp Image 2023-10-19 at 10.44.33_b380ade8.jpg" height="300" width="500"  style="float:left" >
+        </a>
+     
+     <p class="job">     As a part of our community, you will have the opportunity to be the first to know about our latest developments, participate in exclusive events, and contribute to our growth. Whether you are an investor, a potential employee, or someone who shares our passion, we welcome you to join us.<br><br><br>
+    </p>
+    <a href="https://www.primevideo.com/detail/Asteroid-City/0JFZ4BXD323XYIDGAMNA0U3MUI" target="_blank" style="float: right;"title="click here to watch">
+        <img src="C:\Users\visha\OneDrive\Pictures\Screenshots\Screenshot 2023-10-19 124231.png" width="80px" height="80px" ></a><br><br><br><br><br>

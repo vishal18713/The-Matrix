@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* the element's specified width and height remain constant, and the browser adjusts the size of the content area as necessary. */
+    text-decoration: none;
+    list-style: none;
+          
+
+}
+body{
+    font-family: "Audiowide";
+    background: linear-gradient(to right,blanchedalmond,#00ED64);
+
+}
+nav{
+    background:#001E2B;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+}
+label.logo{
+    color: #00ED64;
+    font-weight: 40px;
+    font-size: 70px;
+    line-height: 50px;
+    }
+    .logo:hover {
+        text-shadow: 0px 0px 10px #00ED64, 0px 0px 20px #00ED64;
+    }
+.logoimage{
+    line-height:50px ;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: #00ED64;
+    font-weight: 80px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.active a{
+    background: #00ED64;
+    color: #001E2B;
+    transition: .5s;
+}
+a:hover{
+    background: #00ED64;
+    color: #001E2B;
+    transition: .5s;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    margin-top: 50px;
+    width: 100%;
+    background-color:white;
+    flex-wrap: wrap;
+}
+.cont_1{
+    position: relative;
+    flex: 1;
+    width: 100%;
+    background: white;
+    height: 440px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.c_1{
+   
+    flex: 1;
+    position: relative;
+    /* height: 440px; */
+    border-radius: 20px;
+    background: #00ED64;
+    margin: 10px 30px 10px 30px;
+    transition: 1s;
+    box-shadow: 8px -8px 5px 0px #888888;
+    display: flex;
+    flex-direction: row;
+}
+.c_1:hover{
+    flex: 9;
+    background: #001E2B;
+}
+.c_1:hover .sub_1{
+    flex: 1;
+    
+    clip-path: circle(100% at 86.5% 0%);
+}
+.c_1:hover .sub_2{
+    flex: 1;
+    
+    clip-path: circle(115.3% at 0% 0%);
+}
+.c_1:hover .sub_3{
+    flex: 1;
+   
+    clip-path: circle(100% at 86.5% 0%);
+}
+.c_1:hover .sub_4{
+    flex: 1;
+   
+    clip-path: circle(115.3% at 0% 0%);
+}
+
+
+.sub_1{
+    clip-path: circle(60% at 100% 0%);
+    background: #001E2B;
+    flex: 1;
+    position: relative;
+    height: 440px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    transition: 1s;
+    text-align: center;
+    justify-content: center;
+    padding-left: 45px;
+ 
+
+}
+.sub_1 h3{
+    color: #00ED64;
+    float: bottom;
+    text-shadow: 0px 0px 10px #001E2B, 0px 0px 2px #001E2B;
+}
+.sub_2{
+    clip-path: circle(60% at 0% 0%);
+    background: #001E2B;
+    flex: 1;
+    position: relative;
+    height: 440px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    transition: 1s;
+    text-align: center;
+    justify-content: center;
+    padding-right: 45px;
+ 
+
+}
+.sub_3{
+    clip-path: circle(60% at 100% 100%);
+    background: #001E2B;
+    flex: 1;
+    position: relative;
+    height: 440px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 1s;
+    text-align: center;
+    justify-content: center;
+    padding-left: 45px;
+}
+.sub_4{
+    clip-path: circle(60% at 0% 100%);
+    background: #001E2B;
+    flex: 1;
+    position: relative;
+    height: 440px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    transition: 1s;
+    text-align: center;
+    justify-content: center;
+    padding-right: 45px;
+ 
+
+}
+
+    
+
+
+.ima{
+    flex: 3;
+    height: 440px;
+    position: relative;
+    transition: 1s;
+    border-radius: 20px;
+    
+
+}
+
+
+.ima img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover; 
+  }
+
+
+
+
+.c_1:hover .ima{
+    flex: 1;
+   
+
+}
+.sub_1 p{
+    opacity: 0;
+    font-size: 0px;
+
+}
+.sub_2 p{
+    opacity: 0;
+    font-size: 0px;
+
+}
+.sub_3 p{
+    opacity: 0;
+    font-size: 0px;
+    
+
+}
+.sub_4 p{
+    opacity: 0;
+    font-size: 0px;
+
+}
+
+.c_1:hover .sub_1 p h3{
+    opacity: 1;
+   
+    text-align: right;
+    padding-left: 30px;
+    color: #001E2B;
+    position: relative;
+    font-size: 20px;
+    
+    
+}
+.sub_2:hover .ima{
+    margin-left: 40px;
+}
+.c_1:hover .sub_2 p h3{
+    opacity: 1;
+   
+    text-align: left;
+    padding-right: 60px;
+    color: #001E2B;
+    position: relative;
+    font-size: 20px;
+    
+}
+.c_1:hover .sub_3 p h3{
+    opacity: 1;
+    font-size: 20px;
+   
+    text-align: right;
+    padding-left: 30px;
+    color: #001E2B;
+    position: relative;
+    
+}
+.c_1:hover .sub_4 p h3{
+    opacity: 1;
+   
+    text-align: left;
+    padding-right: 60px;
+    color: #001E2B;
+    position: relative;
+    font-size: 20px;
+    
+}

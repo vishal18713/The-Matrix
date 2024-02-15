@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+        html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: blue;
+        }
+
+        .container {
+            border: solid 5px black;
+            border-radius: 20px;
+            margin-top: 50px;
+            margin-right: 300px;
+            margin-left: 300px;
+            background-color: skyblue;
+        }
+
+        .content {
+            text-align: center;
+        }
+    </style>
+    <title>Centered Text Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Terms and Conditions</h1>
+        <ol id="victims-list"></ol>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Updated sample data with additional victims
+                const victimsData = [
+                    { name: "Sarah Johnson", age: 32, recoveryStatus: "Successfully Recovered", description: "Sarah successfully completed the de-addiction program and is now leading a healthy, drug-free life." },
+                    { name: "Michael Williams", age: 45, recoveryStatus: "In Recovery", description: "Michael is currently in the recovery phase, making positive progress in overcoming addiction." },
+                    { name: "Emily Davis", age: 28, recoveryStatus: "Successfully Recovered", description: "Emily has overcome addiction and is now an advocate for addiction awareness and recovery." },
+                    { name: "David Thompson", age: 38, recoveryStatus: "In Recovery", description: "David is actively participating in the recovery program and is determined to make positive changes in his life." },
+                    { name: "Sophia Martinez", age: 25, recoveryStatus: "Successfully Recovered", description: "Sophia has successfully completed the de-addiction program and is pursuing her career goals." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    { name: "Daniel White", age: 40, recoveryStatus: "In Recovery", description: "Daniel is in the early stages of recovery, attending counseling sessions and support groups." },
+                    // Add more victims as needed
+                ];
+
+                function createListItem(data, listId) {
+                    const list = document.getElementById(listId);
+                    data.forEach(victim => {
+                        const listItem = document.createElement("li");
+                        listItem.classList.add("victim");
+                        listItem.innerHTML = `
+              <div class="job">
+                  <p class="name">${victim.name}</p>
+                  <p class="age">Age: ${victim.age}</p>
+                  <p class="recovery-status">${victim.recoveryStatus}</p>
+                  <p class="description">${victim.description}</p>               
+              </div>  
+              `;
+                        list.appendChild(listItem);
+                    });
+                }
+
+                createListItem(victimsData, "victims-list");
+            });
+        </script>
+    </div>
+</body>
+
+</html>

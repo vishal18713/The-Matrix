@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <body>
+        <nav>
+            <label class="logoimage"><img
+                    src="logo.png" height="50px"
+                    width="50px"></label>
+            <label class="logo">MATRIX</label>
+            <ul>
+                <li ><a href="1_homepage.html">Home</a></li>
+                <li><a href="connectpage.html">Connect</a></li>
+                <li><a href="profilepage.html">Profile</a></li>
+                <li><a href="loginpage.html" target="_self">Login</a></li>
+                <li class="active"><a href="signup.html">Sign-up</a></li>
+                <li><a href="1_helppage.html">Help</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <form action="1_homepage.html" align="center" target="_self">
+                <h2>Sign Up</h2>
+                <p>Locate your account </p>
+                <p>Have an account ? <a href="loginpage.html">Log In</a> </p>
+                <button type="submit" class="button">Google</button>
+                <br>
+                <button type="submit" class="button">Facebook</button>
+                <p>-----or-----</p>
+                <div class="input">
+                    
+                    
+                    <input id="e1" type="Email" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                    
+                    
+                </div>
+                <div class="input">
+                    
+                    <input id="n1" type="name" required placeholder="First Name">
+                    <i class='bx bx-user' ></i>
+                    
+                </div>
+                <div class="input">
+                   
+                    <input id="n1" type="name" required placeholder="Last Name">
+                    <i class='bx bx-user' ></i>
+                   
+                </div>
+                <div class="input">
+                    
+                    <input id="p1" type="password" required placeholder="Password">
+                    <i class='bx bx-lock-alt' ></i>
+
+                    
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I accept privacy policy</label>
+                </div>
+                <button type="submit" class="button" onclick="create_account()">Sign up</button>
+            </form>
+        </div>
+        
+        <script>
+            function create_account()
+        {
+            var n=document.getElementById("n1").value;
+            var e=document.getElementById("e1").value;
+            var p=document.getElementById("p1").value;
+            
+            // Code for password validation
+            
+            var letters = /^[A-Za-z]+$/;
+            var email_val = /^([A-Za-z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            //others validations required code
+            if (n==''||e==''||p=='')
+            {
+                alert("Enter each detail correctly");
+            }
+            else if(!letters.test(n))
+            {
+                alert("Given name format is incorrect");
+            }
+            else if (!email_val.test(e))
+            {
+                alert("Invalid email format");
+            }
+            else if (document.getElementById("p1").value.length < 6)
+            {
+                alert("Min length of password is 6");
+            }
+            else {
+                alert("Your account has been created successfully...");
+       }
+}
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+        body
+        {
+            background-color:#001E2B ;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Audiowide";
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #00ED64;
+            border-radius: 10px;
+            box-shadow: 0 0 200px #00684A;
+            text-align: center;
+          
+    
+        }
+
+        .container h1 {
+            color: #333333;
+            margin-top: 20px;
+        }
+
+        .container p {
+            color: #666666;
+            margin-top: 10px;
+        }
+
+        .container ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;   /*wrap: This allows the items to wrap onto multiple lines if they don't fit on one line.*/
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .container ul li {
+            width: 200px;
+            height: 200px;
+            background-color:#00684A;
+            border-radius: 10px;
+            margin: 10px;
+            display: flex;
+           
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container ul li i {
+            font-size: 60px;
+            color: #333333;
+        }
+
+        .container ul li span {
+            font-size: 20px;
+            color: #333333; 
+        }
+        .container li:hover
+        {
+            background-color: aquamarine;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How can we help you?</h1>
+        <p>Choose a topic below to find answers to your questions.</p>
+        <ul>
+            <li>
+                <span>Resume</span>
+            </li>
+            <li>
+                <a href="">
+                <span>Job Search</span>
+                </a>
+            </li>
+            <li>
+                <span>Job Application</span>
+            </li>
+            <li>
+                <span>Interview</span>
+            </li>
+            <li>
+                <span>FAQs</span>
+            </li>
+            <li>
+                <a href="">
+                <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+

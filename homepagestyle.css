@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* the element's specified width and height remain constant, and the browser adjusts the size of the content area as necessary. */
+    text-decoration: none;
+    list-style: none;
+          
+
+}
+body{
+    font-family: "Audiowide";
+    background: linear-gradient(to right,blanchedalmond,#00ED64);
+
+}
+nav{
+    background:#001E2B;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 100%;
+}
+label.logo{
+    color: #00ED64;
+    font-weight: 40px;
+    font-size: 70px;
+    line-height: 50px;
+    }
+    .logo:hover {
+        text-shadow: 0px 0px 10px #00ED64, 0px 0px 2px #00ED64;
+    }
+.logoimage{
+    line-height:50px ;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: #00ED64;
+    font-weight: 80px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.active a{
+    background: #00ED64;
+    color: #001E2B;
+    transition: .5s;
+}
+a:hover{
+    background: #00ED64;
+    color: #001E2B;
+    transition: .5s;
+}
+footer{
+    width:100% ;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right,#00ED64,#001E2B);
+    color: #001E2B;
+    padding: 100px 0 30px;
+    border-top-right-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.fline{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+ .imagejob{
+    height: 200px;
+    width: 200px;
+    line-height: 50px;
+     margin-top: 50px;
+ } 
+.fcol{
+    padding: 10px;
+}
+.job{
+    font-size: 30px;
+    color: #001E2B;
+    background: transparent;
+}

@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(50,50,50);
+}
+.nav{
+    height: 14vh;
+    width: 95vw;
+    margin: auto;
+    border-bottom: 0.4px solid snow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 1px 1px 2px snow; */
+    
+}
+.logo{
+    color: snow;
+    font-size: 2.5rem;
+}
+.ul1{
+    text-decoration: none;
+    color: snow;
+    display: flex;
+    list-style-type: none;
+}
+.li1{
+    font-size: larger;
+    margin-left: 2vw;
+}
+li:hover{
+    transform: scale(1.05);
+    /* text-shadow:0.5px 0.5px 1px white; */
+}
+
+button{
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    background: black;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    transition: 0.2s linear;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow:0.5px 0.5px 1.5px snow;
+}
+.search{
+    margin-right: 1vw;
+}
+.box2{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+.stayInformed{
+    height: 26vh;
+    width: 40vw;
+    position: relative;
+    left: 10vw;
+    top: 15vh;
+    font-size: 4rem;
+    color: snow;
+}
+.simplifiedsecure{
+    width: 40vw;
+    height: 8vh;
+    position: relative;
+    left: 10vw;
+    top: 25vh;
+    font-size: 1.4rem;
+    color: snow;
+}
+
+.getstarted{
+    position: relative;
+    left: 10vw;
+    top: 35vh;
+    width: 30vw;
+}
+
+.background1{
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(22,22,22);
+    position: relative;
+    left: 55vw;
+    bottom: 10vh;
+    border-radius: 25px;
+}
+
+.first{
+    height: 20vh;
+    width: 20vw;
+}
+
+
+.box2{
+    width: 100vw;
+    height: 300vh;
+    background-color: rgb(22,22,22);
+    
+}
+
+.ln{
+    position: relative;
+    color: snow;
+    width: 100vw;
+    height: 5vh;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.fs{
+    position: relative;
+    color: snow;
+    width: 100vw;
+    height: 10vh;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.sac{
+    position: relative;
+    color: snow;
+    width: 100vw;
+    height: 5vh;   
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.background2{
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(50,50,50);
+    position: relative;
+    left: 35vw;
+    top: 20vh;
+    border-radius: 25px;
+}
+.BCS{
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    top: 30vh;
+    font-size: 2rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin{
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    top: 30vh;
+    font-size: 1.3rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup{
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    position: relative;
+    top: 28vh;
+    left: 40vw;
+    width: 20vw;
+}
+.signup:hover{
+    box-shadow: 1px 1px 2px snow;
+}
+
+.EF{
+    width: 40vw;
+    height: 8vh;
+    position: relative;
+    left: 10vw;
+    top: 55vh;
+    font-size: 1.3rem;
+    color: snow;
+    /* background-color: aqua; */
+}
+
+.Soln{
+    width: 40vw;
+    height: 8vh;
+    position: relative;
+    left: 10vw;
+    top: 55vh;
+    font-size: 4rem;
+    color: snow;
+}
+.covered{
+    width: 40vw;
+    height: 8vh;
+    position: relative;
+    left: 10vw;
+    top: 68vh;
+    font-size: 1.3rem;
+    color: snow;
+    /* background-color: aqua; */
+}
+.explorenow{
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    position: relative;
+    top: 75vh;
+    left: 10vw;
+    width: 20vw;
+}
+
+.explorenow:hover{
+    box-shadow: 1px 1px 2px snow;
+}
+
+.background3{
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(50,50,50);
+    position: relative;
+    left: 60vw;
+    top: 30vh;
+    border-radius: 25px;
+}
+
+/* JS */
+.content {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+/* JS */
+
+.case{
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    top: 45vh;
+    font-size: 3rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caseText{
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    top: 48vh;
+    font-size: 1.5rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(50,50,50);
+}
+
+.connect{
+    width: 40vw;
+    height: 6vh;
+    /* background-color: aqua; */
+    position: relative;
+    top: 25vh;
+    left: 50vw;
+    font-size: 4rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connectText{
+    width: 27vw;
+    height: 6vh;
+    /* background-color: aqua; */
+    position: relative;
+    top: 38vh;
+    left: 58vw;
+    font-size: 1.4rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    background-color: rgb(22,22,22);
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    position: relative;
+    top: 50vh;
+    left: 60vw;
+    width: 20vw;
+}
+.background4{
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(22,22,22);
+    position: relative;
+    left: 10vw;
+    top: 10vh;
+    border-radius: 25px;
+}
+
+.box4{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22,22,22);
+}
+
+.about{
+    width: 40vw;
+    height: 6vh;
+    /* background-color: aqua; */
+    position: relative;
+    top: 25vh;
+    left: 8vw;
+    font-size: 3.5rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText{
+    width: 27vw;
+    height: 6vh;
+    /* background-color: aqua; */
+    position: relative;
+    top: 38vh;
+    left: 12vw;
+    font-size: 1.4rem;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus{
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    padding: 1vw 1vw;
+    color: snow;
+    font-size: 16px;
+    border-radius: 8vw;
+    border: none;
+    position: relative;
+    top: 50vh;
+    left: 15vw;
+    width: 20vw;
+}
+.background5{
+    height: 40vh;
+    width: 35vw;
+    background-color: rgb(50,50,50);
+    position: relative;
+    left: 60vw;
+    top: 10vh;
+    border-radius: 25px;
+}
+.aboutus:hover{
+    box-shadow: 1px 1px 2px snow;
+}
+.contact:hover{
+    box-shadow: 1px 1px 2px snow;
+}
+
+.box5{
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(50,50,50);
+}
+
+.logofoot{
+    height: 6vh;
+    width: 6vw;
+    background-color: rgb(22,22,22);
+    position: relative;
+    top: 6vh;
+    left: 2vw;
+}
+
+.listt{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    gap: 15vw;
+    position: relative;
+    right: 6vw;
+}
+
+.ul2{
+    text-decoration: none;
+    color: snow;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    
+}
+.li2{
+    font-size: larger;
+    margin-left: 2vw;
+}
+li:hover{
+    transform: scale(1.05);
+    /* text-shadow:0.5px 0.5px 1px white; */
+}
+.followfoot{
+    color: snow;
+}
+.lastline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lin{
+    width: 80vw;
+    height: 1vh;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+

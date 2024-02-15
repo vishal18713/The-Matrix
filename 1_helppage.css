@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong");
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+html{
+  height: 100%;
+  font-size: 14px;
+}
+
+body{
+  height: 100%;
+  font-family: "Audiowide";
+}
+nav{
+  background:#001E2B;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+label.logo{
+  color: skyblue;
+  font-weight: 40px;
+  font-size: 70px;
+  line-height: 50px;
+  }
+  .logo:hover {
+      text-shadow: 0px 0px 10px skyblue, 0px 0px 2px skyblue;
+  }
+.logoimage{
+  line-height:50px ;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 10px;
+}
+nav ul li a{
+  color: skyblue;
+  font-weight: 80px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active a{
+  background: skyblue;
+  color: #001E2B;
+  transition: .5s;
+}
+a:hover{
+  background: skyblue;
+  color: #001E2B;
+  transition: .5s;
+}
+
+.hero-section{
+  background: linear-gradient(to bottom right ,skyblue,blue);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 64px 24px;
+}
+
+.card-grid{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card{
+  position: relative;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.background{
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  position: absolute;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) .background{
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.content{
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color:  rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  
+}
